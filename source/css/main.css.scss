@@ -93,6 +93,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Niconne);
+
+.cursive {
+    font-family: 'Niconne', cursive;
+}
+
+.main-container {
+    background-color: #bbeecc;
+    text-align:center;
+    width: 800px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+body {
+    background-color: white;
+}
+
+.nav-menu {
+    list-style-type: none;
+
+
+
+}
+
+
+
 
 
 

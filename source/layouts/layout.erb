@@ -18,22 +18,25 @@
         <script src="js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
+        <section class="main-container">
+            <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
 
-        <h1>Shaun and Betty's Wedding</h1>
+            <h1 class="cursive">
+              <%=link_to "Shaun and Betty's Wedding", '/index.html' %>
+            </h1>
 
-        <ul>
-          <li><%= link_to 'Our Story', '/our-story.html' %></li>
-          <li>Ceremony</li>
-          <li>Reception</li>
-          <li>Registry</li>
-        </ul>
+            <ul class="nav-menu">
+              <li><%= link_to 'Our Story', '/our-story.html' %></li>
+              <li>Ceremony</li>
+              <li>Reception</li>
+              <li>Registry</li>
+            </ul>
 
-        <%= yield %>
-
+            <%= yield %>
+        </section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
