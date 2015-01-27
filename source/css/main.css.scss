@@ -93,32 +93,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Niconne);
-
+@import url(http://fonts.googleapis.com/css?family=Halant:300,400|Sacramento|Rochester);
 .cursive {
-    font-family: 'Niconne', cursive;
+    font-family: 'Sacramento';
 }
 
+.caps {
+   font-family: 'Halant:300';
+   text-transform: uppercase;
+   color: rgb(85, 26, 139);
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    text-transform: none;
+    margin-top: 20px;
+    display: block;
+}
 .main-container {
-    background-color: #bbeecc;
     text-align:center;
-    width: 800px;
+    position: absolute;
 }
 
 a {
     text-decoration: none;
-    color: grey;
 }
 
 body {
     background-color: white;
+    width: 100%;
 }
 
 .nav-menu {
+    width: 500px;
+    margin: 0 auto 0 auto;
+    padding: 0px;
     list-style-type: none;
+    a {
+        color: rgb(85, 26, 139);
+    }
+    li {
+        display: table-cell;
+        width: 100px;
+    }
 
+}
 
+.envelope {
+    background-color: pink;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px grey;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    z-index: 1;
+    opacity: 0.9;
+}
 
+.letter {
+    width: 400px;
+    background-color: white;
+    border:1px solid black;
+    box-shadow: 3px 3px 3px grey;
+    position: relative;
+    bottom: 200px;
+    left: 200px;
+    opacity: 0.9;
 }
 
 
