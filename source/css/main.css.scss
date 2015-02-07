@@ -104,86 +104,23 @@ textarea {
    color: rgb(85, 26, 139);
 }
 
-h1 {
-    margin-bottom: 0px;
-}
-
-.center {
-    text-align: center;
-}
-
-.content {
-    text-transform: none;
-    margin-top: 20px;
-    display: block;
-}
-.main-container {
-    text-align:center;
-    position: absolute;
-}
-
-a {
-    text-decoration: none;
-}
-
 body {
     background-color: white;
     width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 .nav-menu {
     width: 500px;
-    margin: 0 auto 0 auto;
-    padding: 0px;
-    list-style-type: none;
-    a {
-        color: rgb(85, 26, 139);
-    }
+    margin: 0 auto 20px auto;
     li {
         display: table-cell;
-        width: 100px;
+        padding: 0 10px;
     }
 
+
 }
-
-.envelope {
-    background-color: pink;
-    border: 1px solid black;
-    box-shadow: 3px 3px 3px grey;
-    position: relative;
-    width: 400px;
-    height: 200px;
-    z-index: 1;
-    opacity: 0.9;
-}
-
-.letter {
-    width: 400px;
-    background-color: white;
-    border:1px solid black;
-    box-shadow: 3px 3px 3px grey;
-    position: relative;
-    bottom: 200px;
-    left: 200px;
-    opacity: 0.9;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
