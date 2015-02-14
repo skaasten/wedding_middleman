@@ -1,1 +1,39 @@
-Details to come
+<% form_tag '/rsvp', method: :post do %>
+  <% field_set_tag do %>
+    <table>
+      <tr>
+        <td>
+          <%= label_tag :name %>
+        </td>
+        <td>
+          <%= text_field_tag :name, id: :name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= label_tag :guest %>
+        </td>
+        <td>
+          <%= text_field_tag :guest, id: :guest %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= label_tag :meal_choice %>
+        </td>
+        <td>
+          <select name="meal">
+            <option>Beef</option>
+            <option>Chicken</option>
+            <option>Vegetarian</option>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <%= submit_tag %>
+          </td>
+      </tr>
+    </table>
+    <% end %>
+<% end %>
