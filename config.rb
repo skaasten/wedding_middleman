@@ -39,11 +39,11 @@
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def active_path(path)
+    "class='active'" if current_page.path == path
+  end
+end
 
 set :css_dir, 'css'
 

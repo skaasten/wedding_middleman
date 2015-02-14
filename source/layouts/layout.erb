@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Use title if it's in the page YAML frontmatter -->
-        <title><%= current_page.data.title || "HTML5 Boilerplate" %></title>
+        <title><%= current_page.data.title || "Beatriz and Shaun's Wedding" %></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -22,14 +22,20 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
             <h1 class="cursive">
-              <%=link_to "Shaun and Betty's Wedding", '/index.html' %>
+              <%=link_to "Beatriz and Shaun's Wedding", '/index.html' %>
             </h1>
             <div class="caps">August 29, 2015</div>
 
             <ul class="nav-menu caps">
-              <li><%= link_to 'Our Story', '/our-story.html' %></li>
-              <li><%= link_to 'Ceremony', '/ceremony.html' %></li>
-              <li><%= link_to 'Reception', '/reception.html' %></li>
+              <li <%= active_path 'our-story.html' %> >
+                  <%= link_to 'Our Story', '/our-story.html' %>
+              </li>
+              <li <%= active_path 'ceremony.html' %> >
+                <%= link_to 'Ceremony', '/ceremony.html' %>
+              </li>
+              <li <%= active_path 'reception.html' %> >
+                <%= link_to 'Reception', '/reception.html' %>
+              </li>
               <li>Registry</li>
             </ul>
             <section class="content">

@@ -117,7 +117,7 @@ body {
     li {
         display: table-cell;
         padding: 0 10px;
-        &:hover {
+        &.active {
             border-bottom: 1px solid rgba(124,124,124,0.7);
         }
     }
@@ -127,6 +127,7 @@ body {
     text-align: left;
     width: 80%;
     margin: 40px auto;
+    color: rgba(124,124,124, 1);
 }
 
 a {
