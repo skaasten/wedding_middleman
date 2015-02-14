@@ -124,6 +124,9 @@ body {
             display: table-cell;
         }
     }
+    .copyright {
+        bottom: 5px;
+    }
 }
 
 .nav-menu {
@@ -159,7 +162,6 @@ a {
 .copyright {
     font-size: x-small;
     color: rgb(85, 26, 139);
-    bottom: 5px;
     position: absolute;
     text-align: center;
     width: 100%;
