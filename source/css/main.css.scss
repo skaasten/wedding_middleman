@@ -115,6 +115,12 @@ body {
     .nav-menu {
         width: 100px;
     }
+    iframe.small {
+        display: block;
+    }
+    iframe.large {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -123,6 +129,10 @@ body {
         li {
             display: table-cell;
         }
+    }
+
+    iframe.small {
+        display: none;
     }
 }
 
