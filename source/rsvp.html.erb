@@ -1,4 +1,4 @@
-<% form_tag '/rsvp', method: :post do %>
+<% form_tag '/rsvp', method: :post, id: 'rsvp-form' do %>
   <% field_set_tag do %>
     <table class="rsvp">
       <tr>
@@ -26,6 +26,7 @@
             <option>Beef</option>
             <option>Chicken</option>
             <option>Vegetarian</option>
+          </select>
         </td>
       </tr>
       <tr>
