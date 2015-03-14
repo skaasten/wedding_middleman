@@ -11,24 +11,41 @@
       </tr>
       <tr>
         <td>
-          <%= label_tag :guest %>
-        </td>
-        <td>
-          <%= text_field_tag :guest, id: :guest %>
-        </td>
-      </tr>
-      <tr>
-        <td>
           <%= label_tag :meal_choice %>
         </td>
         <td>
-          <select name="meal">
+          <select name="meal_choice">
             <option>Beef</option>
             <option>Chicken</option>
             <option>Vegetarian</option>
           </select>
         </td>
       </tr>
+
+      <tr class="blank-row"><td><br></td><tr>
+
+      <tr>
+        <td>
+          <%= label_tag :guest %>
+        </td>
+        <td>
+          <%= text_field_tag :guest, id: :guest %>
+        </td>
+      </tr>
+        <td>
+          <%= label_tag :guest_meal %>
+        </td>
+        <td>
+          <select name="guest_meal">
+            <option>Beef</option>
+            <option>Chicken</option>
+            <option>Vegetarian</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr class="blank-row"><td><br></td><tr>
+
       <tr>
         <td></td>
         <td>
