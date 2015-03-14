@@ -9,9 +9,10 @@ $(function() {
         meal: $("input[name=meal]").val()
     };
     $.ajax({
-        url: "http://localhost:3000/rsvp",
-        dataType: "post",
-        type: "POST"
+        url: "/rsvp/rsvp",
+        contentType : 'application/json',
+        type: "POST",
+        data: JSON.stringify(params)
     }).done(function() {
         alert("Thank you for rsvping! Can't wait to see you there!");
     }).error(function() {
