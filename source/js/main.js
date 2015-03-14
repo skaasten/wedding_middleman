@@ -15,7 +15,8 @@ $(function() {
         type: "POST",
         data: JSON.stringify(params)
     }).done(function() {
-        alert("Thank you for rsvping! Can't wait to see you there!");
+        $("form").hide();
+        $(".thankyou").toggleClass("hidden", false);
     }).error(function() {
         console.log(arguments);
     });
