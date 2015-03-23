@@ -1,12 +1,23 @@
 <% form_tag '/rsvp', method: :post, id: 'rsvp-form' do %>
   <% field_set_tag do %>
     <table class="rsvp">
+
       <tr>
         <td>
-          <%= label_tag :name %>
+          <%= label_tag :email, class: 'required'%>
         </td>
         <td>
-          <%= text_field_tag :name, id: :name %>
+          <%= text_field_tag :email, id: :email, required: 'required', type: 'email' %>
+        </td>
+
+      <tr class="blank-row"><td><br></td><tr>
+
+      <tr>
+        <td>
+          <%= label_tag :name, class: 'required' %>
+        </td>
+        <td>
+          <%= text_field_tag :name, id: :name, required: 'required' %>
         </td>
       </tr>
       <tr>
@@ -26,10 +37,10 @@
 
       <tr>
         <td>
-          <%= label_tag :guest %>
+          <%= label_tag :guest, class: 'required'%>
         </td>
         <td>
-          <%= text_field_tag :guest, id: :guest %>
+          <%= text_field_tag :guest, id: :guest, required: 'required' %>
         </td>
       </tr>
         <td>

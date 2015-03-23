@@ -4,6 +4,7 @@ $(function() {
   $("#rsvp-form").submit(function(e) {
     e.preventDefault();
     var params = {
+        email: $("input[name=email]").val(),
         name: $("input[name=name]").val(),
         meal_choice: $("select[name=meal_choice]").val(),
         guest: $("input[name=guest]").val(),

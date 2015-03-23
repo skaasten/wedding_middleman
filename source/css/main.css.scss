@@ -160,6 +160,10 @@ body {
     text-align: center;
 }
 
+label.required::before {
+    content: "*";
+}
+
 .content {
     text-align: left;
     width: 80%;
