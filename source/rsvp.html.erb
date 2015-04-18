@@ -10,7 +10,22 @@
           <%= text_field_tag :email, id: :email, required: 'required', type: 'email' %>
         </td>
 
-      <tr class="blank-row"><td><br></td><tr>
+      <tr class="blank-row"><td><br></td></tr>
+
+      <tr>
+        <td></td>
+        <td>
+            <%= radio_button_tag :can_attend, value: 'true' %>
+            <%= label_tag :can_attend, caption: "Yes - We will be there!" %>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+            <%= radio_button_tag :can_attend, value: 'false' %>
+            <%= label_tag :can_attend, caption: 'Sorry - can\'t make it :(' %>
+        </td>
+      </tr>
 
       <tr>
         <td>
@@ -33,7 +48,7 @@
         </td>
       </tr>
 
-      <tr class="blank-row"><td><br></td><tr>
+      <tr class="blank-row"><td><br></td></tr>
 
       <tr>
         <td>
@@ -55,7 +70,7 @@
         </td>
       </tr>
 
-      <tr class="blank-row"><td><br></td><tr>
+      <tr class="blank-row"><td><br></td></tr>
 
       <tr>
         <td></td>
