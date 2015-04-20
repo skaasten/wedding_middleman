@@ -29,10 +29,10 @@
 
       <tr class="meal-choice hidden">
         <td>
-          <%= label_tag :name, class: 'required' %>
+          <%= label_tag :name %>
         </td>
         <td>
-          <%= text_field_tag :name, id: :name, required: 'required' %>
+          <%= text_field_tag :name, id: :name %>
         </td>
       </tr>
       <tr class="meal-choice hidden">
@@ -52,10 +52,10 @@
 
       <tr class="guest-name hidden">
         <td>
-          <%= label_tag :guest, class: 'required'%>
+          <%= label_tag :guest%>
         </td>
         <td>
-          <%= text_field_tag :guest, id: :guest, required: 'required' %>
+          <%= text_field_tag :guest, id: :guest %>
         </td>
       </tr>
       <tr class="meal-choice hidden">
@@ -84,5 +84,5 @@
 <% end %>
 
 <section class="thankyou hidden welcome">
-  Thank you for responding - See you on August 29th!
+  Thank you for responding!
 </section>
