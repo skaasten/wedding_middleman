@@ -15,19 +15,19 @@
       <tr>
         <td></td>
         <td>
-            <%= radio_button_tag :can_attend, value: 'true' %>
-            <%= label_tag :can_attend, caption: "Yes - We will be there!" %>
+            <%= radio_button_tag :can_attend, id: 'can_attend_yes', value: 'true' %>
+            <%= label_tag :can_attend_yes, caption: "Yes - We will be there!" %>
         </td>
       </tr>
       <tr>
         <td></td>
         <td>
-            <%= radio_button_tag :can_attend, value: 'false' %>
-            <%= label_tag :can_attend, caption: 'Sorry - can\'t make it :(' %>
+            <%= radio_button_tag :can_attend, id: 'can_attend_no', value: 'false' %>
+            <%= label_tag :can_attend_no, caption: 'Sorry - can\'t make it :(' %>
         </td>
       </tr>
 
-      <tr>
+      <tr class="meal-choice hidden">
         <td>
           <%= label_tag :name, class: 'required' %>
         </td>
@@ -35,7 +35,7 @@
           <%= text_field_tag :name, id: :name, required: 'required' %>
         </td>
       </tr>
-      <tr>
+      <tr class="meal-choice hidden">
         <td>
           <%= label_tag :meal_choice %>
         </td>
@@ -50,7 +50,7 @@
 
       <tr class="blank-row"><td><br></td></tr>
 
-      <tr>
+      <tr class="guest-name hidden">
         <td>
           <%= label_tag :guest, class: 'required'%>
         </td>
@@ -58,6 +58,7 @@
           <%= text_field_tag :guest, id: :guest, required: 'required' %>
         </td>
       </tr>
+      <tr class="meal-choice hidden">
         <td>
           <%= label_tag :guest_meal %>
         </td>
